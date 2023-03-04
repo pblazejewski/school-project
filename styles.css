@@ -1,0 +1,168 @@
+@font-face {
+    font-family: MinecraftTen;
+    src: url(./fonts/MinecraftTen-VGORe.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./img/headerBg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__title {
+    font-family: 'MinecraftTen', sans-serif;
+    font-size: 68px;
+    margin-bottom: 1px;
+}
+
+.header-title__span {
+    color: #0db50d;
+}
+
+.header__paragraph {
+    font-family: 'MinecraftTen', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.paragraph__span {
+    color: #c64fbd;
+    font-weight: bold;
+}
+
+.scroll-down__btn {
+    margin-left: 1px;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-family: 'MinecraftTen', sans-serif;
+    border: none;
+    color: #fff;
+    background-color: #0db50d;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.95) 0px 14px 28px, rgba(0, 0, 0, 0.90) 0px 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.scroll-down__btn:hover {
+    background-color: #0f800f;
+    box-shadow: rgba(255, 255, 255, 0.95) 0px 14px 28px, rgba(255, 255, 255, 0.90) 0px 5px 10px;
+    transition: ease-out 0.2s;
+}
+
+article {
+    background: url(./img/header-dark.png);
+    font-family: 'MinecraftTen', sans-serif;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authors__names {
+    font-size: 32px;
+}
+
+.article-authors__span {
+    color:#b02e26;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px;
+
+}
+.main-block__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.1 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.block__img {
+    width: 200px;
+    height: 200px;   
+}
+
+.block__id {
+    font-size: 15px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 550px) {
+    .header__title, .header-title__span {
+        font-size: 48px;
+    }
+    .header__paragraph {
+        font-size: 20px;
+        text-align: center;
+    }
+    .header__div {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .authors__names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 30px;
+
+    }
+    .article-authors__span {
+        text-align: center;
+        font-size: 24px;
+    }
+        main {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 10px;
+        padding: 15px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    }
